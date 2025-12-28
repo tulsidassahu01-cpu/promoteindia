@@ -1,8 +1,8 @@
 -- Promote India Foundation Database Schema
 -- Run this SQL script to manually create the database and tables if needed
 
-CREATE DATABASE IF NOT EXISTS promote_india_db;
-USE promote_india_db;
+CREATE DATABASE IF NOT EXISTS u256949449_promote_india_;
+USE u256949449_promote_india_;
 
 -- Contact Submissions Table
 CREATE TABLE IF NOT EXISTS contact_submissions (
