@@ -1,0 +1,245 @@
+.home {
+  margin-top: 70px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--saffron) 0%, var(--blue) 50%, var(--green) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px 150px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: slideIn 1s ease-out 0.2s both;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  animation: slideIn 1s ease-out 0.4s both;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  animation: slideIn 1s ease-out 0.6s both;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: slideIn 1s ease-out 0.8s both;
+}
+
+.hero-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+
+.hero-waves svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Programs Overview */
+.programs-overview {
+  background: var(--white);
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.program-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid transparent;
+}
+
+.program-card:nth-child(1) {
+  border-top-color: var(--saffron);
+}
+
+.program-card:nth-child(2) {
+  border-top-color: var(--blue);
+}
+
+.program-card:nth-child(3) {
+  border-top-color: var(--green);
+}
+
+.program-card:nth-child(4) {
+  border-top-color: var(--saffron);
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.program-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: var(--saffron);
+  display: flex;
+  justify-content: center;
+}
+
+.program-card h3 {
+  font-size: 1.8rem;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.program-hindi {
+  font-size: 1.1rem;
+  color: var(--saffron);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.program-slogan {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-gray);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.program-description {
+  color: var(--text-gray);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Mission Section */
+.mission-section {
+  background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+  color: var(--white);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.mission-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--saffron);
+}
+
+.mission-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 1.8;
+  color: var(--white);
+}
+
+.mission-english {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 80px 15px 120px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .mission-section {
+    padding: 60px 15px;
+  }
+
+  .mission-section h2 {
+    font-size: 2rem;
+  }
+
+  .mission-text {
+    font-size: 1.4rem;
+  }
+
+  .mission-english {
+    font-size: 1rem;
+  }
+}
+
