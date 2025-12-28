@@ -112,10 +112,10 @@ const Contact = () => {
               <div>
                 <h4>Social Media</h4>
                 <div className="social-links">
-                  <a href="#" aria-label="Facebook"><FaFacebook /> Facebook</a>
-                  <a href="#" aria-label="Twitter"><FaTwitter /> Twitter</a>
-                  <a href="#" aria-label="Instagram"><FaInstagram /> Instagram</a>
-                  <a href="#" aria-label="YouTube"><FaYoutube /> YouTube</a>
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebook /> Facebook</a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /> Twitter</a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /> Instagram</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><FaYoutube /> YouTube</a>
                 </div>
               </div>
             </div>
